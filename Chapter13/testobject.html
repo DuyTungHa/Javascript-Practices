@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test Objects</title>
+</head>
+<body>
+    <script>
+        function Car(){
+            this.name = "car";
+            this.speed = 133;
+        }
+        Car.prototype.toString = function(){
+            return "HELLO";
+        }
+        function Cat(){
+            this.name = "cat";
+            this.owner = "Tung";
+        }
+        var oneCar = new Car();
+        var oneCat = new Cat();
+        console.log(oneCar.toString());
+        console.log(oneCat.toString());
+    </script>
+</body>
+</html>
